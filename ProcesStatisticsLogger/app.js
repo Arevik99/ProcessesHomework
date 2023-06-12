@@ -15,27 +15,28 @@ class ProcessStatisticsGetter {
 
       let processOutput;
       let processError;
-      let processInternalerror;
       childProcess.stdout.on('data', (data) => {
         processOutput = data.toString();
         process.stdout.write(processOutput);
       });
-
-      childProcess.stderr.on('data', (data) => {
-        processInternalerror = true;
-      });
-
+      childProcess.on('error', (error) => {
+        processError = error.toString();
+      })
+      childProcess.stderr.on('data', (error) => {
+        processError = error.toString().replace(/[\r\n]+/g, '');
+      })
       childProcess.on('exit', (code) => {
         const endTime = new Date();
         const duration = endTime - startTime;
         const statistics = {
           start: startTime.toISOString(),
           duration,
-          success: !processInternalerror,
+          success: code == 0,
         };
 
-        if (processInternalerror) {
-          statistics.commandSuccess = !processError
+        if (code !== 0) {
+          statistics.commandSuccess = !processError;
+          statistics.error = processError;
         }
 
         const logFileName = `${startTime.getTime()}${args[0]}.json`;
