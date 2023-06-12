@@ -1,0 +1,11 @@
+id,ip_address,student_id,first_name,last_name,age,gender,major,GPA,graduation_date,email,address
+1,71.31.56.124,1,Sandor,Bulled,19,Male,Business,0.97,8/27/2024,sbulled0@patch.com,7 American Pass
+2,160.179.83.216,2,Fredrick,Lobell,28,Male,Psychology,0.79,7/2/2022,flobell1@mozilla.org,167 International Hill
+3,122.69.84.138,3,Irina,Croyser,21,Female,Psychology,3.57,2/9/2025,icroyser2@state.tx.us,4515 Loftsgordon Center
+4,186.72.212.92,4,Rickie,Sherborn,20,Male,Computer Science,0.06,6/4/2024,rsherborn3@howstuffworks.com,6 Pleasure Place
+5,199.225.130.196,5,Dareen,Macauley,19,Female,Psychology,2.2,1/29/2024,dmacauley4@naver.com,88 Mockingbird Junction
+6,208.37.239.147,6,Suzanne,Deans,20,Female,Psychology,0.56,11/19/2024,sdeans5@vkontakte.ru,205 Butternut Alley
+7,202.128.48.121,7,Rozanna,Jeggo,28,Female,Business,1.86,10/15/2023,rjeggo6@qq.com,89 Arrowood Trail
+8,45.121.186.5,8,Lawrence,Blazey,27,Male,Computer Science,3.75,8/24/2024,lblazey7@bloglines.com,7 Boyd Avenue
+9,162.92.63.205,9,Suellen,Matthewman,21,Female,Computer Science,3.31,2/21/2023,smatthewman8@i2i.jp,7622 John Wall Junction
+10,188.85.175.14,10,Tilly,Branwhite,28,Female,Psychology,2.38,10/12/2023,tbranwhite9@istockphoto.com,50881 Ohio Parkway
